@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Reflection
 {
-    public class Tesla
+    public class Tesla :ICar
     {
         private string _name;
         public string Name
@@ -32,6 +32,13 @@ namespace Reflection
         {
             get => _wheels;
             set => _wheels = value;
+        }
+
+        private bool _hasAutopilot;
+        public bool HasAutopilot
+        {
+            get => _hasAutopilot;
+            set => _hasAutopilot = value;
         }
     }
 }

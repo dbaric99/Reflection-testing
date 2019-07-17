@@ -33,5 +33,12 @@ namespace Reflection
             get => _wheels;
             set => _wheels = value;
         }
+
+        private string _steeringSystem;
+        public string SteeringSystem
+        {
+            get => _steeringSystem;
+            set => _steeringSystem = value;
+        }
     }
 }
