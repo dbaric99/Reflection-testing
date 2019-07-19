@@ -34,6 +34,8 @@ namespace Reflection
                 var firstCar = assembly.CreateInstance(type[0]) as ICar;
                 var secondCar = assembly.CreateInstance(type[1]) as ICar;
                 var thirdCar = assembly.CreateInstance(type[2]) as ICar;
+
+                
             }
             else
                 Console.WriteLine("The targeted text file does not exist!");

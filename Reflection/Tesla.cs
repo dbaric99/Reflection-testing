@@ -6,8 +6,8 @@ namespace Reflection
 {
     public class Tesla :ICar
     {
-        public string Name { get; set; }
-        public string Model { get; set; }
+        public string Name { get; set; } = "Tesla";
+        public string Model { get; set; } = "Model X";
         public string Engine { get; set; }
         public double Wheels { get; set; }
         public bool HasAutopilot { get; set; }
