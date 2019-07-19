@@ -35,7 +35,8 @@ namespace Reflection
                 var secondCar = assembly.CreateInstance(type[1]) as ICar;
                 var thirdCar = assembly.CreateInstance(type[2]) as ICar;
 
-                
+                Console.WriteLine(
+                    $"{firstCar?.Name} {firstCar?.Model} | {secondCar?.Name} {secondCar?.Model} | {thirdCar?.Name} {thirdCar?.Model}");
             }
             else
                 Console.WriteLine("The targeted text file does not exist!");
