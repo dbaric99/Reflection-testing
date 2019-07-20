@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
 
@@ -12,8 +13,8 @@ namespace Reflection
     {
         static void Main(string[] args)
         {
-            string resourceName = "ReflectionTextFile.txt";
-            string location = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),
+            const string resourceName = "ReflectionTextFile.txt";
+            var location = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),
                 resourceName);
 
             if (File.Exists(location))
